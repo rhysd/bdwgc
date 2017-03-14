@@ -5,7 +5,8 @@ clone_depth: 50
 build_script:
   - git clone --depth=50 https://github.com/ivmai/libatomic_ops.git
   - cmake -Denable_gcj_support=ON
-  - cmake --build . --config Debug
+  - cmake --build .
+  - ls
 
 test_script:
   - ctest --build-config Debug -V
