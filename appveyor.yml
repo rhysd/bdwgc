@@ -8,7 +8,7 @@ build_script:
   - cmake --build .
   - ls
   - ls Debug
-  - ls lib-gc
+  - ls lib-gc.dir
 
 test_script:
   - ctest --build-config Debug -V
