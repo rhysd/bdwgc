@@ -10,3 +10,8 @@ build_script:
 
 test_script:
   - ctest --build-config Debug -V
+
+artifacts:
+  - path: .
+    name: libgc-win32-x86_64
+    type: zip
